@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #141C2F;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
+}
+
+#theme-toggle span {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/* Search Bar */
+.search-bar {
+  background-color: #383c43;
+  width: 630px;
+  border: #0079FF;
+  border-radius: 20px;
+  display:flow-root;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#inputField {
+  flex: 1;
+  width: 70%;
+  height: 10%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px 30px;
+  outline:#296cbe;
+}
+
+#inputField::placeholder {
+  color: #ffffff;
+}
+
+#searchButton {
+  background-color: #296cbe;
+  
+  border: none;
+  width: 150px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#searchButton:hover {
+  background-color: #7e8ea0;
+}
+
+/* User Profile Card */
+#showProfile {
+  background-color: #1F2A48;
+  border-radius: 15px;
+  padding: 20px;
+  display: none;
+}
+
+#showProfile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#showProfile h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#showProfile h3 {
+  color: #0079FF;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#showProfile h4 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+#showProfile p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+#showProfile a {
+  color: #0079FF;
+  text-decoration: none;
+}
+
+#showProfile a:hover {
+  text-decoration: underline;
+}
+
+/* Statistics Section */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: #141C2F;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats h4 {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.stats span {
+  font-size: 16px;
+  font-weight: bold;
+}
